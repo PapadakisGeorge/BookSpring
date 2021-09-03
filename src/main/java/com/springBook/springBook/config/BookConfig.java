@@ -27,7 +27,10 @@ public class BookConfig {
                     "1st",
                     1926
             );
-            bookRepository.saveAll(List.of(nineteenEightyFour, theCastle));
+            //bookRepository.saveAll(List.of(nineteenEightyFour, theCastle));
+            bookRepository.save(nineteenEightyFour);
+            bookRepository.save(theCastle);
+
         };
     }
 }
